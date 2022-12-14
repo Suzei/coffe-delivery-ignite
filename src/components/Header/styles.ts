@@ -13,7 +13,13 @@ export const HeaderContainer = styled.div`
   }
 `
 
-export const LocationButton = styled.div`
+export const LocationContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`
+
+export const Location = styled.div`
   background: ${(props) => props.theme['purple-300']};
   color: ${(props) => props.theme['purple-400']};
   display: flex;

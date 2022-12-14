@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const LayoutDefault = styled.div`
-  margin: 0 auto;
-
-  body {
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+export const CenterWrapper = styled.div`
+  padding: 10px;
 `

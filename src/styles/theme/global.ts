@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     button {
-        background-color: #E6E5E5;
+        border: none;
+        border-radius: 6px;
     }
 `
