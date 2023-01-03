@@ -2,17 +2,16 @@ import styled from 'styled-components'
 import Banner from '../../assets/hero-image.png'
 
 interface ResumeIconsProps {
-    backgroundColor: string
+  backgroundColor: string
 }
 
 export const BannerContainer = styled.div`
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-evenly;
   margin: 0 auto;
-  font-family: 'Baloo 2';
   margin-top: 5.875rem;
 
   @media (max-width: 1030px) {
@@ -21,10 +20,10 @@ export const BannerContainer = styled.div`
 
   h2 {
     font-size: 42px;
+    line-height: 1.2;
   }
 
   p {
-    font-family: 'Roboto';
     line-height: 1.2;
     font-size: 1.25rem;
   }
@@ -75,4 +74,8 @@ export const BannerImage = styled.div`
   }
 `
 
-export const BannerInfo = styled.div``
+export const BannerInfo = styled.div`
+  > p {
+    margin-top: 1rem;
+  }
+`

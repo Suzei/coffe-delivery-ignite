@@ -1,4 +1,4 @@
-import { Clock, Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { defaultTheme } from '../../styles/theme/default'
 import {
   BannerContainer,
@@ -33,7 +33,7 @@ export function Banner() {
               <span>
                 <Timer weight="fill" size={23} />
               </span>
-              <p>Compra c e segura</p>
+              <p>Entrega rápida e rastreada</p>
             </BannerResumeIcons>
           </div>
 
@@ -42,13 +42,13 @@ export function Banner() {
               <span>
                 <Package weight="fill" size={23} />
               </span>
-              <p>Compra simples e segura</p>
+              <p>Embalagem mantém o café intacto</p>
             </BannerResumeIcons>
             <BannerResumeIcons backgroundColor={defaultTheme['purple-400']}>
               <span>
                 <Coffee weight="fill" size={23} />
               </span>
-              <p>Compra simples e segura</p>
+              <p>O café chega fresquinho até você</p>
             </BannerResumeIcons>
           </div>
         </BannerResume>

@@ -14,6 +14,14 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: #FAFAFA;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Baloo 2';
+        }
     }
 
     input {
