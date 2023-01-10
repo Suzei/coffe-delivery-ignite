@@ -4,14 +4,15 @@ import {
   CoffeCardOrganizer,
   CoffeCardTags,
   CoffeDescription,
-} from "./styles";
-import CoffeImage from "../../assets/Image.png";
+} from './styles'
+import CoffeImage from '../../assets/Image.png'
 
 interface ICoffeCard {
-  coffePreparation: string[];
-  name: string;
-  description: string;
-  price: number;
+  coffePreparation: string[]
+  name: string
+  description: string
+  price: number
+  image: string
 }
 
 export function CoffeCard({
@@ -19,10 +20,14 @@ export function CoffeCard({
   name,
   description,
   price,
+  image,
 }: ICoffeCard) {
+  const formatedToBRL = price.toLocaleString('pt-br', {
+    minimumFractionDigits: 2,
+  })
   return (
     <CoffeCardContainer>
-      <CoffeCardImage src={CoffeImage}></CoffeCardImage>
+      <CoffeCardImage src={image}></CoffeCardImage>
       <CoffeCardOrganizer>
         <CoffeCardTags>
           {coffePreparation?.map((item) => (
@@ -31,7 +36,13 @@ export function CoffeCard({
         </CoffeCardTags>
         <h3>{name}</h3>
         <CoffeDescription>{description}</CoffeDescription>
+        <div>
+          <div>
+            <span>R$</span>
+            <h2>{formatedToBRL}</h2>
+          </div>
+        </div>
       </CoffeCardOrganizer>
     </CoffeCardContainer>
-  );
+  )
 }
