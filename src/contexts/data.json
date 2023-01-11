@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "image": "/src/assets/coffe-1.png",
         "name": "Expresso Tradicional",
         "tags": [
             "Tradicional"
@@ -11,6 +12,8 @@
     },
     {
         "id": "2",
+        "image": "/src/assets/coffe-2.png",
+
         "name": "Expresso Americano",
         "tags": [
             "Tradicional"
@@ -21,6 +24,8 @@
     },
     {
         "id": "3",
+        "image": "/src/assets/coffe-3.png",
+
         "name": "Expresso Cremoso",
         "tags": [
             "Tradicional"
@@ -31,6 +36,8 @@
     },
     {
         "id": "4",
+        "image": "/src/assets/coffe-4.png",
+
         "name": "Expresso Gelado",
         "tags": [
             "Tradicional",
@@ -42,6 +49,8 @@
     },
     {
         "id": "5",
+        "image": "/src/assets/coffe-5.png",
+
         "name": "Café com Leite",
         "tags": [
             "Tradicional",
@@ -53,6 +62,8 @@
     },
     {
         "id": "6",
+        "image": "/src/assets/coffe-6.png",
+
         "name": "Latte",
         "tags": [
             "Tradicional",
@@ -64,6 +75,8 @@
     },
     {
         "id": "7",
+        "image": "/src/assets/coffe-7.png",
+
         "name": "Capuccino",
         "tags": [
             "Tradicional",
@@ -75,6 +88,8 @@
     },
     {
         "id": "8",
+        "image": "/src/assets/coffe-8.png",
+
         "name": "Machiatto",
         "tags": [
             "Tradicional",
@@ -86,17 +101,23 @@
     },
     {
         "id": "9",
-        "name": "Chocolate Quente",
+        "image": "/src/assets/coffe-9.png",
+
+        "name": "Moccaccino",
         "tags": [
-            "Especial",
+            "Tradicional",
             "Com Leite"
         ],
-        "description": "Bebida feita com chocolate dissolvido no leite quente e café",
+        "description": "Café expresso com calda de chocolate, pouco leite e espuma",
         "price": 9.90,
         "quantity": 1
     },
+
+
     {
         "id": "10",
+        "image": "/src/assets/coffe-11.png",
+
         "name": "Cubano",
         "tags": [
             "Especial",
@@ -109,6 +130,8 @@
     },
     {
         "id": "11",
+        "image": "/src/assets/coffe-12.png",
+
         "name": "Havaiano",
         "tags": [
             "Especial"
@@ -119,6 +142,8 @@
     },
     {
         "id": "12",
+        "image": "/src/assets/coffe-13.png",
+
         "name": "Árabe",
         "tags": [
             "Especial"
@@ -129,6 +154,8 @@
     },
     {
         "id": "13",
+        "image": "/src/assets/coffe-14.png",
+
         "name": "Irlandês",
         "tags": [
             "Especial",
@@ -137,5 +164,20 @@
         "description": "Bebida a base de café, uísque irlandês, açúcar e chantilly",
         "price": 9.90,
         "quantity": 1
+    },
+
+    {
+        "id": "14",
+        "image": "/src/assets/coffe-10.png",
+        
+        "name": "Chocolate Quente",
+        "tags": [
+            "Especial",
+            "Com Leite"
+        ],
+        "description": "Bebida feita com chocolate dissolvido no leite quente e café",
+        "price": 9.90,
+        "quantity": 1
     }
+    
 ]

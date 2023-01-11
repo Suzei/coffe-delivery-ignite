@@ -20,18 +20,14 @@ export function Home() {
             {coffes.map((item) => (
               <CoffeCard
                 key={item.id}
-                coffePreparation={item.tags}
+                image={item.image}
+                tags={item.tags}
                 name={item.name}
                 description={item.description}
                 price={item.price}
+                quantity={item.quantity}
               />
             ))}
-            <CoffeCard
-              coffePreparation={['Tradicional', 'Gelato']}
-              name="Café Coado"
-              description="Este café é muito coadoasdasdaadasadasdsadsa"
-              price={29.9}
-            />
           </Coffes>
         </HomeCoffeContainer>
       </main>

@@ -14,7 +14,7 @@ export function Header() {
           <span>Porto Alegre, RS</span>
         </Location>
         <NavLink to="/cart">
-          <CartButton isGoingToCart />
+          <CartButton />
         </NavLink>
       </LocationContainer>
     </HeaderContainer>

@@ -7,11 +7,14 @@ interface ICoffe {
   name: string
   description: string
   price: number
+  image: string
+  quantity: number
 }
 
 interface ICoffeProps {
   coffes: ICoffe[]
   cart: ICoffe[]
+  AddingItemToCart(): void
 }
 
 interface CoffeContextChildrenProps {
@@ -23,6 +26,7 @@ export const CoffeList = createContext({} as ICoffeProps)
 export function CoffeContext({ children }: CoffeContextChildrenProps) {
   const [cart, setCart] = useState([])
   const coffes = CoffeData
+
   return (
     <CoffeList.Provider value={{ cart, coffes }}>{children}</CoffeList.Provider>
   )

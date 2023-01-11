@@ -1,47 +1,68 @@
+import { Minus, Plus } from 'phosphor-react'
+import { BRLCurrency } from '../../utils/convertToBRL'
+import { CartButton } from '../CartButton'
 import {
   CoffeCardContainer,
   CoffeCardImage,
   CoffeCardOrganizer,
+  CoffeCardPrice,
+  CoffeCardQuantitySelector,
   CoffeCardTags,
   CoffeDescription,
 } from './styles'
-import CoffeImage from '../../assets/Image.png'
 
 interface ICoffeCard {
-  coffePreparation: string[]
+  tags: string[]
   name: string
   description: string
   price: number
   image: string
+  quantity: number
 }
 
 export function CoffeCard({
-  coffePreparation,
+  tags,
   name,
   description,
   price,
   image,
+  quantity,
 }: ICoffeCard) {
-  const formatedToBRL = price.toLocaleString('pt-br', {
-    minimumFractionDigits: 2,
-  })
+  const convertedPrice = BRLCurrency(price)
+
   return (
     <CoffeCardContainer>
       <CoffeCardImage src={image}></CoffeCardImage>
       <CoffeCardOrganizer>
         <CoffeCardTags>
-          {coffePreparation?.map((item) => (
-            <span>{item}</span>
+          {tags?.map((item) => (
+            <span key={item}>{item}</span>
           ))}
         </CoffeCardTags>
         <h3>{name}</h3>
         <CoffeDescription>{description}</CoffeDescription>
-        <div>
+        <CoffeCardPrice>
           <div>
             <span>R$</span>
-            <h2>{formatedToBRL}</h2>
+            <h2>{convertedPrice}</h2>
           </div>
-        </div>
+
+          <div>
+            <div>
+              <CoffeCardQuantitySelector>
+                <button>
+                  <Plus weight="bold" />
+                </button>
+                <span>{quantity}</span>
+                <button>
+                  <Minus weight="bold" />
+                </button>
+              </CoffeCardQuantitySelector>
+
+              <CartButton isGoingToCart />
+            </div>
+          </div>
+        </CoffeCardPrice>
       </CoffeCardOrganizer>
     </CoffeCardContainer>
   )

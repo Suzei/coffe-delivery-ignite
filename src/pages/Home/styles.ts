@@ -8,20 +8,25 @@ export const HomeContainer = styled.div`
 
 export const HomeCoffeContainer = styled.div`
   display: grid;
-  margin-top: 8rem;
+  padding: 1rem;
+  margin-top: 2rem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
   h2 {
     font-size: 2rem;
   }
 `
 
 export const Coffes = styled.div`
+  flex: 1;
+  width: 80%;
+  padding: 2rem;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 3rem;
   flex-wrap: wrap;
 `
