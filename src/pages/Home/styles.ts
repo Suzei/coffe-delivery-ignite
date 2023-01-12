@@ -7,11 +7,10 @@ export const HomeContainer = styled.div`
 `
 
 export const HomeCoffeContainer = styled.div`
-  display: grid;
-  padding: 1rem;
+  display: flex;
+  padding: 3rem;
   margin-top: 2rem;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 3rem;
   h2 {
@@ -20,12 +19,8 @@ export const HomeCoffeContainer = styled.div`
 `
 
 export const Coffes = styled.div`
-  flex: 1;
-  width: 80%;
-  padding: 2rem;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 3rem;
   flex-wrap: wrap;

@@ -83,6 +83,10 @@ export const CoffeCardPrice = styled.div`
   > div {
     gap: 0.2rem;
 
+    h2 {
+      font-size: 2rem;
+    }
+
     span {
       font-size: 0.9rem;
       font-weight: lighter;
@@ -100,6 +104,7 @@ export const CoffeCardQuantitySelector = styled.div`
 
   button {
     background: transparent;
+    cursor: pointer;
   }
 
   span {

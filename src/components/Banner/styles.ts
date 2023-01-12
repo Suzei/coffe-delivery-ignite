@@ -33,7 +33,6 @@ export const BannerResume = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  margin-top: 4.125rem;
   gap: 20px;
 `
 
